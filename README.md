@@ -20,6 +20,7 @@ pip install scarfing
 ## On publishing to pypi
 1. login to pypi and generate a token
 2. poetry config pypi-token.pypi "your-token-here"
+3. poetry publish --build
 
 ## On building the docs
 1. Follow steps in https://olgarithms.github.io/sphinx-tutorial
@@ -37,3 +38,10 @@ pip install scarfing
 ## On publishing docs to readthedocs
 1. Create a project on readthedocs
 2. View the docs
+
+
+## Testing scarf.sh
+- Run with extra-index-url:
+  - pip install scarfing --extra-index-url https://my-test-organization.gateway.scarf.sh/simple/
+  - It will usually take 30 minutes and up to 2-3 hours before you see data pulled in.
+- If you run withouth the extra-index-url, it will not pull in data from scarf.sh
