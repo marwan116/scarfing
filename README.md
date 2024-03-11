@@ -40,8 +40,18 @@ pip install scarfing
 2. View the docs
 
 
-## Testing scarf.sh
+## Testing scarf.sh 
+
+## python package tracking
 - Run with extra-index-url:
   - pip install scarfing --extra-index-url https://my-test-organization.gateway.scarf.sh/simple/
   - It will usually take 30 minutes and up to 2-3 hours before you see data pulled in.
 - If you run withouth the extra-index-url, it will not pull in data from scarf.sh
+
+
+## Adding a pixel to the README
+- Create a pixel on the scarf.sh dashboard
+  - Specify which package you to correlate the data with (e.g. python or docker)
+- Embed the pixel in the README (see pixel image below)
+
+<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=038ca666-efd5-46a6-ae08-e4f7bdb244a3" />
