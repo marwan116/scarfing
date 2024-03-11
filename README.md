@@ -39,15 +39,30 @@ pip install scarfing
 1. Create a project on readthedocs
 2. View the docs
 
+## On building/running/pushing docker image
+- Build the image:
+  - docker build -t scarfing:0.1.0 .
+- Run the image to test it
+  - docker run -rm --it scarfing:0.1.0  
+- Push the image to repository
+  - docker tag scarfing:0.1.0 ortamina/scarfing:0.1.0
+  - docker push ortamina/scarfing:0.1.0
 
 ## Testing scarf.sh 
 
 ## python package tracking
+- Create a python package on scarf.sh
 - Run with extra-index-url:
   - pip install scarfing --extra-index-url https://my-test-organization.gateway.scarf.sh/simple/
   - It will usually take 30 minutes and up to 2-3 hours before you see data pulled in.
-- If you run withouth the extra-index-url, it will not pull in data from scarf.sh
+- If you run withouth the extra-index-url, it will not register in scarf.sh
 
+## docker image tracking
+- Create a docker image on scarf.sh
+- Run with the following command:
+  - docker pull my-test-organization.docker.scarf.sh/ortamina/scarfing:0.1.0
+- It will usually take 30 minutes and up to 2-3 hours before you see data pulled in.
+- If you run docker pull ortamina/scarfing:0.1.0, it will not register in scarf.sh
 
 ## Adding a pixel to the README
 - Create a pixel on the scarf.sh dashboard
