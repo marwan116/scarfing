@@ -27,6 +27,8 @@ pip install scarfing
    2. sphinx-quickstart docs
    3. add extensions to docs/conf.py
    4. update theme in docs/conf.py
+2. Export README.md to index.rst
+   1. pandoc README.md -o docs/index.rst
 2. add .readthedocs.yml
 3. create a requirements.txt file in docs
    1. poetry export -f requirements.txt --output docs/requirements.txt --group docs

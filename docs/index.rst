@@ -1,20 +1,56 @@
-.. Scarfy documentation master file, created by
-   sphinx-quickstart on Mon Mar 11 11:04:36 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Scarfing
+========
 
-Welcome to Scarfy's documentation!
-==================================
+Motivation
+----------
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+A dummy python package to test out scarf.sh
 
+How to setup
+------------
 
+Using poetry:
 
-Indices and tables
-==================
+.. code:: bash
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   poetry add scarfing
+
+Using pip:
+
+.. code:: bash
+
+   pip install scarfing
+
+On publishing to pypi
+---------------------
+
+1. login to pypi and generate a token
+2. poetry config pypi-token.pypi “your-token-here”
+
+On building the docs
+--------------------
+
+1. Follow steps in https://olgarithms.github.io/sphinx-tutorial
+
+   1. Install sphinx
+   2. sphinx-quickstart docs
+   3. add extensions to docs/conf.py
+   4. update theme in docs/conf.py
+
+2. Export README.md to index.rst
+
+   1. pandoc README.md -o docs/index.rst
+
+3. add .readthedocs.yml
+4. create a requirements.txt file in docs
+
+   1. poetry export -f requirements.txt –output docs/requirements.txt
+      –group docs
+
+5. push to github
+
+On publishing docs to readthedocs
+---------------------------------
+
+1. Create a project on readthedocs
+2. View the docs
