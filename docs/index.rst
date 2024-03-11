@@ -59,6 +59,9 @@ On publishing docs to readthedocs
 Testing scarf.sh
 ----------------
 
+python package tracking
+-----------------------
+
 -  Run with extra-index-url:
 
    -  pip install scarfing –extra-index-url
@@ -68,3 +71,16 @@ Testing scarf.sh
 
 -  If you run withouth the extra-index-url, it will not pull in data
    from scarf.sh
+
+Adding a pixel to the README
+----------------------------
+
+-  Create a pixel on the scarf.sh dashboard
+
+   -  Specify which package you to correlate the data with (e.g. python
+      or docker)
+
+-  Embed the pixel in the README (see pixel image below)
+
+.. image:: https://static.scarf.sh/a.png?x-pxid=038ca666-efd5-46a6-ae08-e4f7bdb244a3
+   :alt: Pixel tracker from scarf.sh

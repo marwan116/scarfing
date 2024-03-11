@@ -53,5 +53,6 @@ pip install scarfing
 - Create a pixel on the scarf.sh dashboard
   - Specify which package you to correlate the data with (e.g. python or docker)
 - Embed the pixel in the README (see pixel image below)
+- Unfortunately pandoc does not support moving images to rst, so we need to manually add the pixel to the index.rst file
 
 <img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=038ca666-efd5-46a6-ae08-e4f7bdb244a3" />
